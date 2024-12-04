@@ -84,7 +84,7 @@ a {
 
 .card .title-container h2 {
   font-family: "Cardo", serif;
-  font-size: 1.125rem;
+  font-size: 1.12rem;
 }
 
 .card .title-container span {
@@ -96,7 +96,7 @@ a {
   font-size: 0.688rem;
   color: rgba(0, 0, 0, 0.87);
   width: fit-content;
-  line-height: 1.031rem;
+  line-height: 1.03rem;
   padding-bottom: 10px;
 }
 
@@ -110,6 +110,39 @@ a {
 
 .footer {
   width: 100%;
+  margin-top: 17px;
+  background: linear-gradient(to bottom, #9f9f9f 0%, #fbfbfb 10%, #ffffff 100%);
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.footer-content:first-child {
+  border-bottom: 2px solid #c4c4c4;
+}
+
+.footer-content h2 {
+  font-size: 1.87rem;
+  font-weight: bold;
+  padding-top: 62px;
+}
+
+.footer-content ul {
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.footer-content ul li {
+  margin-top: 17px;
+}
+
+.footer-content ul li a {
+  font-size: 1.06rem;
+  color: #9f9f9f;
+}
+
+.footer-content ul li a:hover {
+  color: black;
 }
 
 @media only screen and (min-width: 1368px) {
@@ -169,7 +202,7 @@ a {
   .card-text {
     font-size: 1rem;
     text-align: justify;
-    line-height: 1.875rem;
+    line-height: 1.87rem;
     grid-area: 3 / 2 / 5 / 3;
   }
 
@@ -185,6 +218,31 @@ a {
   }
 
   .card .title-container span {
-    font-size: 1.063rem;
+    font-size: 1.06rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 76px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-content {
+    padding-right: 124px;
+    padding-left: 124px;
+    margin-top: 46px;
+    margin-bottom: 46px;
+  }
+
+  .footer-content h2 {
+    padding-top: 16px;
+  }
+
+  .footer-content:first-child {
+    border-bottom: none;
+    border-right: 2px solid #c4c4c4;
   }
 }
