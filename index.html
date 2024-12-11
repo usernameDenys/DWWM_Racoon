@@ -1,155 +1,167 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="src/css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <meta name="author" content="Denys Holenko">
+    <meta
+      name="description"
+      content="Découvrez des articles et ressources sur le développement web, le freelance, la high-tech et les bonnes pratiques pour développeurs.">
+    <link
+      rel="shortcut icon"
+      href="src/resources/icons/raton-laveur.png"
+      type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Racoon</title>
   </head>
-  <body class="body">
-    <header class="header">
-      <div class="header-container">
-        <ul>
-          <li><a href="">Accueil</a></li>
-          <li><a href="">Articles</a></li>
-          <li><a href="">À propos</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <div class="icons">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            aria-label="rediriger vers la page facebook">
-            <svg
-              width="10"
-              height="20"
-              viewBox="0 0 10 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M6.25 6.875V4.375C6.25 3.685 6.81 3.125 7.5 3.125H8.75V0H6.25C4.17875 0 2.5 1.67875 2.5 3.75V6.875H0V10H2.5V20H6.25V10H8.75L10 6.875H6.25Z"
-                fill="black" />
-            </svg>
-          </a>
-          <a
-            href="https://x.com"
-            target="_blank"
-            aria-label="rediriger vers la page X">
-            <svg
-              width="25"
-              height="21"
-              viewBox="0 0 25 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M24.9513 2.44693C24.0332 2.85404 23.0467 3.12924 22.0113 3.25297C23.0681 2.61944 23.8798 1.61627 24.262 0.420854C23.2728 1.00755 22.1774 1.43352 21.0113 1.66306C20.0776 0.668174 18.7471 0.0465851 17.2748 0.0465851C14.4477 0.0465851 12.1557 2.33845 12.1557 5.16544C12.1557 5.56666 12.201 5.95735 12.2883 6.33206C8.03392 6.11851 4.26194 4.0806 1.73718 0.983476C1.29654 1.73952 1.04405 2.61886 1.04405 3.55701C1.04405 5.33304 1.94776 6.8999 3.32134 7.81788C2.48221 7.79127 1.69288 7.56101 1.00278 7.17758C1.00229 7.19892 1.00229 7.22037 1.00229 7.24196C1.00229 9.72217 2.76686 11.7911 5.10858 12.2614C4.67909 12.3784 4.2268 12.4411 3.75994 12.4411C3.43007 12.4411 3.10941 12.409 2.79678 12.3491C3.44825 14.3827 5.33869 15.863 7.57875 15.9041C5.8268 17.2772 3.61954 18.0955 1.22115 18.0955C0.807943 18.0955 0.400487 18.0713 0 18.0238C2.2654 19.4764 4.95619 20.3239 7.84703 20.3239C17.2628 20.3239 22.4117 12.5236 22.4117 5.75896C22.4117 5.53703 22.4067 5.31627 22.3969 5.09668C23.3972 4.375 24.2651 3.47344 24.9513 2.44693Z"
-                fill="black" />
-            </svg>
-          </a>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">À propos</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <div class="icons">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="rediriger vers la page facebook">
+              <svg
+                width="10"
+                height="20"
+                viewBox="0 0 10 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.25 6.875V4.375C6.25 3.685 6.81 3.125 7.5 3.125H8.75V0H6.25C4.17875 0 2.5 1.67875 2.5 3.75V6.875H0V10H2.5V20H6.25V10H8.75L10 6.875H6.25Z"
+                  fill="black"/>
+              </svg>
+            </a>
+            <a
+              href="https://x.com"
+              target="_blank"
+              aria-label="rediriger vers la page X">
+              <svg
+                width="25"
+                height="21"
+                viewBox="0 0 25 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.9513 2.44693C24.0332 2.85404 23.0467 3.12924 22.0113 3.25297C23.0681 2.61944 23.8798 1.61627 24.262 0.420854C23.2728 1.00755 22.1774 1.43352 21.0113 1.66306C20.0776 0.668174 18.7471 0.0465851 17.2748 0.0465851C14.4477 0.0465851 12.1557 2.33845 12.1557 5.16544C12.1557 5.56666 12.201 5.95735 12.2883 6.33206C8.03392 6.11851 4.26194 4.0806 1.73718 0.983476C1.29654 1.73952 1.04405 2.61886 1.04405 3.55701C1.04405 5.33304 1.94776 6.8999 3.32134 7.81788C2.48221 7.79127 1.69288 7.56101 1.00278 7.17758C1.00229 7.19892 1.00229 7.22037 1.00229 7.24196C1.00229 9.72217 2.76686 11.7911 5.10858 12.2614C4.67909 12.3784 4.2268 12.4411 3.75994 12.4411C3.43007 12.4411 3.10941 12.409 2.79678 12.3491C3.44825 14.3827 5.33869 15.863 7.57875 15.9041C5.8268 17.2772 3.61954 18.0955 1.22115 18.0955C0.807943 18.0955 0.400487 18.0713 0 18.0238C2.2654 19.4764 4.95619 20.3239 7.84703 20.3239C17.2628 20.3239 22.4117 12.5236 22.4117 5.75896C22.4117 5.53703 22.4067 5.31627 22.3969 5.09668C23.3972 4.375 24.2651 3.47344 24.9513 2.44693Z"
+                  fill="black"/>
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-      <img
-        src="./src/resources/img/bg.png"
-        alt="photo of a person running down a hill"
-        class="bg-img" />
-    </header>
-
-    <main class="main">
-      <section class="card">
         <img
-          src="./src/resources/img/card-img.png"
-          alt="product image"
-          class="product-img" />
-        <div class="title-container">
-          <h2>Le statut de Freelance</h2>
-          <span>Publié le 14 juin 2018</span>
-        </div>
-        <p class="card-text">
-          Dans un précédent podcast on s'était intéressé au métier de
-          développeur web de manière générale mais aujourd'hui je voulais me
-          focaliser sur le statut de freelance en particulier. Plutôt que de
-          faire une longue explication sur le statut, mon expér...
-        </p>
-      </section>
-      <section class="card">
-        <img
-          src="./src/resources/img/card-img.png"
-          alt="product image"
-          class="product-img" />
-        <div class="title-container">
-          <h2>Le statut de Freelance</h2>
-          <span>Publié le 14 juin 2018</span>
-        </div>
-        <p class="card-text">
-          Dans un précédent podcast on s'était intéressé au métier de
-          développeur web de manière générale mais aujourd'hui je voulais me
-          focaliser sur le statut de freelance en particulier. Plutôt que de
-          faire une longue explication sur le statut, mon expér...
-        </p>
-      </section>
-      <section class="card">
-        <img
-          src="./src/resources/img/card-img.png"
-          alt="product image"
-          class="product-img" />
-        <div class="title-container">
-          <h2>Le statut de Freelance</h2>
-          <span>Publié le 14 juin 2018</span>
-        </div>
-        <p class="card-text">
-          Dans un précédent podcast on s'était intéressé au métier de
-          développeur web de manière générale mais aujourd'hui je voulais me
-          focaliser sur le statut de freelance en particulier. Plutôt que de
-          faire une longue explication sur le statut, mon expér...
-        </p>
-      </section>
-      <section class="card">
-        <img
-          src="./src/resources/img/card-img.png"
-          alt="product image"
-          class="product-img" />
-        <div class="title-container">
-          <h2>Le statut de Freelance</h2>
-          <span>Publié le 14 juin 2018</span>
-        </div>
-        <p class="card-text">
-          Dans un précédent podcast on s'était intéressé au métier de
-          développeur web de manière générale mais aujourd'hui je voulais me
-          focaliser sur le statut de freelance en particulier. Plutôt que de
-          faire une longue explication sur le statut, mon expér...
-        </p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <section class="footer-content">
-        <h2>Catégories</h2>
-        <ul>
-          <li><a href="#">High-Tech</a></li>
-          <li><a href="#">Concentré du Web</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Astuces pour développeurs</a></li>
-          <li><a href="#">Ressources</a></li>
-          <li><a href="#">Bonnes pratiques</a></li>
-        </ul>
-      </section>
-      <section class="footer-content">
-        <h2>Catégories</h2>
-        <ul>
-          <li><a href="#">High-Tech</a></li>
-          <li><a href="#">Concentré du Web</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Astuces pour développeurs</a></li>
-          <li><a href="#">Ressources</a></li>
-          <li><a href="#">Bonnes pratiques</a></li>
-        </ul>
-      </section>
-    </footer>
+          src="./src/resources/img/bg.png"
+          alt="photo of a person running down a hill"
+          class="bg-img">
+      </header>
+      <main>
+        <section class="card">
+          <img
+            src="./src/resources/img/card-img.png"
+            alt="product image"
+            class="product-img">
+          <div class="title-container">
+            <h2>Le statut de Freelance</h2>
+            <span>Publié le 14 juin 2018</span>
+          </div>
+          <p class="card-text">
+            Dans un précédent podcast on s'était intéressé au métier de
+            développeur web de manière générale mais aujourd'hui je voulais me
+            focaliser sur le statut de freelance en particulier. Plutôt que de
+            faire une longue explication sur le statut, mon expér...
+          </p>
+        </section>
+        <section class="card">
+          <img
+            src="./src/resources/img/card-img.png"
+            alt="product image"
+            class="product-img">
+          <div class="title-container">
+            <h2>Le statut de Freelance</h2>
+            <span>Publié le 14 juin 2018</span>
+          </div>
+          <p class="card-text">
+            Dans un précédent podcast on s'était intéressé au métier de
+            développeur web de manière générale mais aujourd'hui je voulais me
+            focaliser sur le statut de freelance en particulier. Plutôt que de
+            faire une longue explication sur le statut, mon expér...
+          </p>
+        </section>
+        <section class="card">
+          <img
+            src="./src/resources/img/card-img.png"
+            alt="product image"
+            class="product-img">
+          <div class="title-container">
+            <h2>Le statut de Freelance</h2>
+            <span>Publié le 14 juin 2018</span>
+          </div>
+          <p class="card-text">
+            Dans un précédent podcast on s'était intéressé au métier de
+            développeur web de manière générale mais aujourd'hui je voulais me
+            focaliser sur le statut de freelance en particulier. Plutôt que de
+            faire une longue explication sur le statut, mon expér...
+          </p>
+        </section>
+        <section class="card">
+          <img
+            src="./src/resources/img/card-img.png"
+            alt="product image"
+            class="product-img">
+          <div class="title-container">
+            <h2>Le statut de Freelance</h2>
+            <span>Publié le 14 juin 2018</span>
+          </div>
+          <p class="card-text">
+            Dans un précédent podcast on s'était intéressé au métier de
+            développeur web de manière générale mais aujourd'hui je voulais me
+            focaliser sur le statut de freelance en particulier. Plutôt que de
+            faire une longue explication sur le statut, mon expér...
+          </p>
+        </section>
+      </main>
+      <footer>
+        <section class="footer-content">
+          <h2>Catégories</h2>
+          <ul>
+            <li><a href="#">High-Tech</a></li>
+            <li><a href="#">Concentré du Web</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Astuces pour développeurs</a></li>
+            <li><a href="#">Ressources</a></li>
+            <li><a href="#">Bonnes pratiques</a></li>
+          </ul>
+        </section>
+        <section class="footer-content">
+          <h2>Catégories</h2>
+          <ul>
+            <li><a href="#">High-Tech</a></li>
+            <li><a href="#">Concentré du Web</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Astuces pour développeurs</a></li>
+            <li><a href="#">Ressources</a></li>
+            <li><a href="#">Bonnes pratiques</a></li>
+          </ul>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
