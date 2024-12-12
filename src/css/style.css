@@ -1,3 +1,12 @@
+/* --- TABLE OF STYLES --- */
+/* ---                 --- */
+/* MOBILE FIRST            */
+/* MOBILE STYLES - HEADER  */
+/* MOBILE STYLES - MAIN    */
+/* MOBILE STYLES - FOOTER  */
+/* DESKTOP STYLES          */
+/* @MEDIA                  */
+
 /* reset styles */
 * {
   margin: 0;
@@ -14,16 +23,21 @@ a {
   text-decoration: none;
 }
 
-/* mobile styles */
+html {
+  font-size: 16px;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
 }
+/* MOBILE FIRST  */
 
 .container {
-  min-width: 375px;
+  min-width: 320px;
   margin: 0 auto;
 }
+
+/* MOBILE STYLES - HEADER  */
 
 header {
   width: 100%;
@@ -36,8 +50,8 @@ header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 24px;
-  margin-bottom: 18px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.12rem;
 }
 
 header ul li a {
@@ -48,13 +62,31 @@ header ul li a {
 
 header ul li a:hover {
   color: black;
+  text-decoration: underline;
 }
 
 .icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 24px;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.icons a:hover {
+  animation: spin-and-scale 0.6s ease;
+}
+
+@keyframes spin-and-scale {
+  0% {
+    transform: scale(1.5) rotate(0deg);
+  }
+  100% {
+    transform: scale(2) rotate(360deg);
+  }
+}
+
+.icon:hover {
+  animation: spin-and-scale 0.6s ease;
 }
 
 .bg-img {
@@ -63,9 +95,11 @@ header ul li a:hover {
   object-position: center;
 }
 
+/* MOBILE STYLES - MAIN    */
+
 main {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .card {
@@ -74,12 +108,17 @@ main {
   flex-direction: column;
 }
 
+.card:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.5s;
+}
+
 .title-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 0.62rem;
   order: -1;
 }
 
@@ -89,33 +128,35 @@ main {
 }
 
 .card .title-container span {
-  font-size: 0.688rem;
+  font-size: 0.68rem;
   color: rgba(0, 0, 0, 0.6);
 }
 
 .card-text {
-  font-size: 0.688rem;
+  font-size: 0.68rem;
+  line-height: 1.03rem;
   color: rgba(0, 0, 0, 0.87);
   width: fit-content;
-  line-height: 1.03rem;
-  padding-bottom: 10px;
+  padding-bottom: 0.68rem;
 }
 
 .product-img {
   height: 108px;
   object-fit: cover;
   object-position: center;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
+
+/* MOBILE STYLES - FOOTER  */
 
 footer {
   width: 100%;
-  margin-top: 17px;
+  margin-top: 1.06rem;
   background: linear-gradient(to bottom, #9f9f9f 0%, #fbfbfb 10%, #ffffff 100%);
   text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .footer-content:first-child {
@@ -125,16 +166,16 @@ footer {
 .footer-content h2 {
   font-size: 1.87rem;
   font-weight: bold;
-  padding-top: 62px;
+  padding-top: 3.87rem;
 }
 
 .footer-content ul {
   text-align: center;
-  margin-bottom: 47px;
+  margin-bottom: 2.93rem;
 }
 
 .footer-content ul li {
-  margin-top: 17px;
+  margin-top: 1.06rem;
 }
 
 .footer-content ul li a {
@@ -159,21 +200,21 @@ footer {
   }
 
   .header-container {
-    margin-left: 75px;
-    margin-right: 75px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-left: 4.68rem;
+    margin-right: 4.68rem;
   }
 
   header ul li a {
-    padding-right: 108px;
+    padding-right: 6.75rem;
   }
 
   .icons {
-    margin-top: 35px;
-    gap: 30px;
+    margin-top: 2.18rem;
+    gap: 1.87rem;
   }
 
   .bg-img {
@@ -186,7 +227,7 @@ footer {
     grid-template-rows: 1fr repeat(2, 60px);
     grid-column-gap: 26px;
     grid-row-gap: 0px;
-    margin-top: 31px;
+    margin-top: 1.93rem;
   }
 
   .title-container {
@@ -197,13 +238,13 @@ footer {
   }
 
   .title-container h2 {
-    margin-top: 8px;
+    margin-top: 0.5rem;
   }
 
   .card-text {
     font-size: 1rem;
-    text-align: justify;
     line-height: 1.87rem;
+    text-align: justify;
     grid-area: 3 / 2 / 5 / 3;
   }
 
@@ -226,20 +267,20 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 76px;
+    margin-top: 4.75rem;
     padding-left: 0;
     padding-right: 0;
   }
 
   .footer-content {
-    padding-right: 124px;
-    padding-left: 124px;
-    margin-top: 46px;
-    margin-bottom: 46px;
+    padding-right: 7.75rem;
+    padding-left: 7.75rem;
+    margin-top: 2.87rem;
+    margin-bottom: 2.87rem;
   }
 
   .footer-content h2 {
-    padding-top: 16px;
+    padding-top: 1rem;
   }
 
   .footer-content:first-child {
@@ -259,8 +300,8 @@ footer {
   .header-container {
     width: 1920px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 3.12rem;
+    padding-right: 3.12rem;
   }
 
   .bg-img {
@@ -278,16 +319,19 @@ footer {
     justify-content: flex-start;
     align-items: center;
     background: #fbfbfb;
-    padding: 20px 10px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 0.62rem;
+    padding-right: 0.62rem;
     border-left: 2px solid #c4c4c4;
   }
 
   .footer-content {
-    padding: 20px 0;
-    padding-left: 50px;
+    width: 100%;
     text-align: left;
     border-bottom: 1px solid #c4c4c4;
-    width: 100%;
+    padding: 1.25rem 0;
+    padding-left: 3.12rem;
   }
 
   .footer-content:first-child {
@@ -300,7 +344,7 @@ footer {
 
   .footer-content h2 {
     font-size: 1.87rem;
-    margin-bottom: 47px;
+    margin-bottom: 2.93rem;
   }
 
   .footer-content ul {
@@ -308,7 +352,7 @@ footer {
   }
 
   .footer-content ul li {
-    margin: 17px 0;
+    margin: 1.06rem 0;
   }
 
   .footer-content ul li a {
